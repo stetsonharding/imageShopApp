@@ -1,0 +1,25 @@
+
+/* order placed button */
+.orderBtn{
+    cursor: pointer;
+    padding: 1em;
+    color: salmon;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: .9em;
+}
+
+/* No itmes in cart p */
+.noItems{
+text-align: center;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+/* total cost */
+.total-cost{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1.3em;
+}
+

@@ -1,0 +1,58 @@
+img.image-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* heart/cart icons stay within div upon hovered*/
+.image-container {
+    position: relative;
+}
+
+
+/* selected class coming from utils */
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.wide {
+    grid-column: span 2;
+}
+
+
+/* Styling/position Heart,plus and shopping cart Icons upon hovered and when clicked */
+.favorite {
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    left:8px;
+    cursor: pointer;
+}
+.plusHoverIcon{
+    color: rgb(255, 0, 191);
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.shoppingCartIcon{
+    color: blue;
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.shoppingCartIcon:hover{
+    color: salmon;
+}
+
+
+
+
+
