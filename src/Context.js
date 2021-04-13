@@ -10,18 +10,24 @@ const ContextProvider =({ children }) =>{
 
 
     //get data from API upon rendering save data to state
-    const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
+    const url = `https://api.unsplash.com/photos?page=5&per_page=30&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
+    
+    // "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
     
     useEffect(() => {
+
+        // console.log(url)
         async function getPhotos() {
             const photosPromise = await fetch(url)
             const photos = await photosPromise.json()
             setAllPhotos(photos)
+       
         }
         getPhotos()
-    }, [])
+     
+    }, [url])
 
-
+   console.log(allPhotos)
 
     //toggle favorited on and off
     const toggleFavorite = (id) => {
@@ -29,7 +35,7 @@ const ContextProvider =({ children }) =>{
             if(photo.id === id){
                 return{
                     ...photo,
-                    isfavorite: !photo.isfavorite
+                    liked_by_user: !photo.liked_by_user
                 }
             }
             return photo

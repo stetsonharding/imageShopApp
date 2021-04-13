@@ -5,6 +5,9 @@ import Photos from "./pages/Photos"
 import Cart from "./pages/Cart"
 
 function App(){
+
+
+
   return(
 <div>
   <Header />

@@ -1,27 +1,27 @@
-img.image-grid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* heart/cart icons stay within div upon hovered*/
-.image-container {
-    position: relative;
-}
-
-
 /* selected class coming from utils */
 .big {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 .wide {
     grid-column: span 2;
 }
 
 
-/* Styling/position Heart,plus and shopping cart Icons upon hovered and when clicked */
+/* grid */
+img.image-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* heart/cart icons stay within div upon hovered*/
+.image-container {
+    position: relative;
+}
+
+/* Style/position heart, plus and shopping cart icons 
+upon hovered and when clicked */
 .favorite {
     color: red;
     font-size: 2rem;
@@ -51,7 +51,7 @@ img.image-grid {
 .shoppingCartIcon:hover{
     color: salmon;
 }
-
+/* ** */
 
 
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import useHover from "../hooks/useHover" //hoook for hover events
 import { Context } from "../../Context"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import "../CartItem/CartItem.css"
 
 
@@ -19,16 +19,16 @@ const CartItem =({ item }) =>{
                 ref={ref}
                 onClick={() => removeFromCart(item)} className={deleteIconClassName}>
             </i>
-            <img src={item.url} width="130px" alt="your item" />
+            <img src={item.urls.thumb} width="130px" alt="your item" />
             <p className="item-price">$5.99</p>
         </div>
     )
 }
 
-CartItem.propTypes = {
-    item: PropTypes.shape({
-        url: PropTypes.string.isRequired
-    })
-}
+// CartItem.propTypes = {
+//     item: PropTypes.shape({
+//         url: PropTypes.string.isRequired
+//     })
+// }
 
 export default CartItem
