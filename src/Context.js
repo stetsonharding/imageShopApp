@@ -37,7 +37,10 @@ const ContextProvider =({ children }) =>{
      const response = await fetch(queryUrl)
      const queryPhotos = await response.json();
     
-     setAllPhotos(prevState => [...prevState.slice(15,15), ...queryPhotos.results])
+    //  setAllPhotos(prevState => [...prevState.slice(15,15), ...queryPhotos.results])
+
+    setAllPhotos([...queryPhotos.results])
+ 
  
 
     }

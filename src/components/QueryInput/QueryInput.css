@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: .5em;
+}
+
+label{
+    padding: 0 .3em;
+}
+
+.query-input{
+    min-width: 300px;
+    max-width: 600px;
+    padding: .7em;
+    border-radius: 5px;
+    border: 2px solid salmon;
+}
+
+
+.submitBtn{
+    border-radius: 10px;
+    color: white; 
+    letter-spacing: 1px;
+    background-color: salmon;
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    color: purple;
+    opacity: .8;
+}

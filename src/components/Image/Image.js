@@ -36,7 +36,7 @@ const Image = ({ className, photo }) => {
       ref={ref}
       className={`${className} image-container`}
     >
-      <img src={photo.urls.thumb} className="image-grid" alt="" />
+      <img src={photo.urls.thumb} className="image-grid" alt={photo.alt_description} />
       {heartIcon()}
       {cartIcon()}
     </div>
