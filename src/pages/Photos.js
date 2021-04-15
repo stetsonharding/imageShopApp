@@ -4,6 +4,7 @@ import {Context} from "../Context"
 import {getClass} from "../utils"
 import "./photos.css"
 
+import QueryInput from "../components/QueryInput/QueryInput"
 
 function Photos(){
     const {allPhotos} = useContext(Context)
@@ -13,9 +14,12 @@ function Photos(){
     ))
 
     return(
+      <>
+      <QueryInput />
       <main className="Photos">
         {imageElements}
       </main>
+      </>
     )
 }
 export default Photos

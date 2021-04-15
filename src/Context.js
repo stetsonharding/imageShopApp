@@ -5,29 +5,43 @@ const Context = React.createContext()
 const ContextProvider =({ children }) =>{
     const [allPhotos, setAllPhotos] = useState([])
     const [cartItems, setCartItems] = useState([])
-   
+    const [imageQuery, setImageQuery] = useState('')
   
-
-
+    
+   
     //get data from API upon rendering save data to state
-    const url = `https://api.unsplash.com/photos?page=5&per_page=30&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
+   
+    const queryUrl = `https://api.unsplash.com/search/photos?page=5&per_page=30&query=${imageQuery}&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
     
     // "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
+
     
     useEffect(() => {
-
-        // console.log(url)
+        const url = `https://api.unsplash.com/photos?page=5&per_page=30&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
         async function getPhotos() {
             const photosPromise = await fetch(url)
             const photos = await photosPromise.json()
             setAllPhotos(photos)
-       
         }
         getPhotos()
-     
-    }, [url])
+       
+    },[])
 
-   console.log(allPhotos)
+  
+  
+    //search query
+    const SearchImage  = async (e) =>{
+
+       e.preventDefault()
+       setImageQuery("")
+     const response = await fetch(queryUrl)
+     const queryPhotos = await response.json();
+    
+     setAllPhotos(prevState => [...prevState.slice(15,15), ...queryPhotos.results])
+ 
+
+    }
+
 
     //toggle favorited on and off
     const toggleFavorite = (id) => {
@@ -59,7 +73,7 @@ const ContextProvider =({ children }) =>{
 
 
     return (
-        <Context.Provider value={{ allPhotos, toggleFavorite, addToCart , cartItems, removeFromCart, setCartItems}}>
+        <Context.Provider value={{ allPhotos, toggleFavorite, addToCart , cartItems, removeFromCart, setCartItems, imageQuery, setImageQuery, SearchImage}}>
             {children}
         </Context.Provider>
     )
