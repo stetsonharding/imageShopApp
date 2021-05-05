@@ -1,26 +1,29 @@
-import React, { useContext } from "react"
-import {Context} from "../../Context"
+import React, { useContext } from "react";
+import { Context } from "../../Context";
 
-import "./QueryInput.css"
+import "./QueryInput.css";
 
-const QueryInput = () =>{
+const QueryInput = () => {
+  const { imageQuery, setImageQuery, SearchImage } = useContext(Context);
 
-    const {imageQuery, setImageQuery, SearchImage} = useContext(Context)
+  return (
+    <>
+      <form className="query-input-form container" onSubmit={SearchImage}>
+        <label className="query-label">
+          <input
+            type="text"
+            className="query-input"
+            placeholder="Search Images"
+            value={imageQuery}
+            onChange={(e) => setImageQuery(e.target.value)}
+          />
+        </label>
+        <button type="submit" className="btn">
+          Search
+        </button>
+      </form>
+    </>
+  );
+};
 
-    return(
-        <form className="query-input-form container"onSubmit={SearchImage} >
-            <label className="query-label">
-                <input
-                type="text"
-                className="query-input"
-                placeholder="Search Images"
-                value={imageQuery}
-                onChange={(e) => setImageQuery(e.target.value) }
-                />
-            </label>
-            <button type="submit" className="submitBtn">Search Image</button>
-        </form>
-    )
-}
-
-export default QueryInput
+export default QueryInput;

@@ -1,6 +1,13 @@
+.cart-title{
+    text-align: center;
+}
 
 /* order placed button */
-.orderBtn{
+.btn-wrapper{
+    text-align: center;
+}
+
+.order-btn{
     cursor: pointer;
     padding: 1em;
     color: salmon;
@@ -10,7 +17,7 @@
 }
 
 /* No itmes in cart p */
-.noItems{
+.no-items{
 text-align: center;
 font-size: 1.2em;
 font-weight: bold;
@@ -22,4 +29,5 @@ font-weight: bold;
     font-weight: bold;
     margin-left: 1.3em;
 }
+
 

@@ -1,31 +1,28 @@
 /*  cart */
-.cart-item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.5em;
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5em;
 }
 
 /* cart images */
 .cart-item img {
-    margin-right: auto;  
-    margin-left: 1em;
+  margin-right: auto;
+  margin-left: 1em;
+  width: 130px;
 }
-
 
 /* effect when hovered on delete */
 .ri-delete-bin-line,
-.ri-delete-bin-fill
-{
-    cursor: pointer;
-    font-size: 1.4em;
+.ri-delete-bin-fill {
+  cursor: pointer;
+  font-size: 1.4em;
 }
-
 
 /* price */
-.item-price{
-    margin-right: 1em;
-    font-size: 1.1em;
-    font-weight: bold;
+.item-price {
+  margin-right: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
 }
-
