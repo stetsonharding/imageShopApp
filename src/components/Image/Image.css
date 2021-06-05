@@ -30,7 +30,7 @@ upon hovered and when clicked */
   cursor: pointer;
 }
 .plus-icon {
-  color: rgb(255, 0, 191);
+  color: white;
   font-size: 2rem;
   position: absolute;
   top: 5px;
@@ -39,7 +39,7 @@ upon hovered and when clicked */
 }
 
 .shopping-cart-icon {
-  color: blue;
+  color: rgb(114, 218, 250);;
   font-size: 2rem;
   position: absolute;
   top: 5px;

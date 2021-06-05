@@ -1,33 +1,32 @@
-.cart-title{
-    text-align: center;
+.cart__title {
+  text-align: center;
 }
 
 /* order placed button */
-.btn-wrapper{
-    text-align: center;
+.cart__btn-wrapper {
+  text-align: center;
 }
 
-.order-btn{
-    cursor: pointer;
-    padding: 1em;
-    color: salmon;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-size: .9em;
+.cart__order-btn {
+  cursor: pointer;
+  padding: 1em;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: rgb(114, 218, 250);
 }
 
 /* No itmes in cart p */
-.no-items{
-text-align: center;
-font-size: 1.2em;
-font-weight: bold;
+.cart__no-items-text {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* total cost */
-.total-cost{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-left: 1.3em;
+.cart__total-cost {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 1.3em;
 }
-
-

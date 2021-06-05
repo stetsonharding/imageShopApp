@@ -18,7 +18,7 @@ const QueryInput = () => {
             onChange={(e) => setImageQuery(e.target.value)}
           />
         </label>
-        <button type="submit" className="btn">
+        <button type="submit" className="submit-btn">
           Search
         </button>
       </form>

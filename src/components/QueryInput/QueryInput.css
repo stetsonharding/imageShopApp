@@ -13,21 +13,25 @@ label {
   width: 250px;
   padding: 0.7em;
   border-radius: 5px;
-  border: 2px solid salmon;
+  border: 2px solid rgb(114, 218, 250);
 }
 
-.btn {
+.submit-btn {
   border-radius: 10px;
-  color: white;
+  color: black;
   letter-spacing: 1px;
-  background-color: salmon;
+  background-color: rgb(114, 218, 250);
   text-transform: uppercase;
 }
 
-.submitBtn:hover {
+.submit-btn:hover {
   cursor: pointer;
   color: purple;
   opacity: 0.8;
+}
+
+input[type="text"] {
+  font-size: inherit;
 }
 
 @media (max-width: 600px) {

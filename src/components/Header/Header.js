@@ -17,7 +17,7 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <h2 className="pic-some-text">Pic Some</h2>
+        <h2 className="header__image-shop-text">Image Shop</h2>
       </Link>
       <Link to="/cart">
         <i className={cartIcon}></i>

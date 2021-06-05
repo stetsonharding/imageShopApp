@@ -7,7 +7,7 @@ import QueryInput from "../components/QueryInput/QueryInput";
 import "./photos.css";
 
 function Photos() {
-  const { allPhotos, nullQuery, error} = useContext(Context);
+  const { allPhotos, nullQuery, error } = useContext(Context);
 
   const imageElements = allPhotos.map((photo, index) => (
     <Image key={photo.id} className={getClass(index)} photo={photo} />
@@ -20,7 +20,6 @@ function Photos() {
 
       <div className="null-query-search">{nullQuery}</div>
       <div className="api-error">{error}</div>
-      
     </>
   );
 }

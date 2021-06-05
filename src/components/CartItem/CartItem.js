@@ -13,14 +13,14 @@ const CartItem = ({ item }) => {
     : "ri-delete-bin-line";
 
   return (
-    <div className="cart-item">
+    <div className="cart-item__container">
       <i
         className={deleteIconClassName}
         ref={ref}
         onClick={() => removeFromCart(item)}
       ></i>
       <img src={item.urls.thumb} alt="Your Item" />
-      <p className="item-price">$5.99</p>
+      <p className="cart-item__item-price">$5.99</p>
     </div>
   );
 };

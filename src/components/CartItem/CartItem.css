@@ -1,5 +1,5 @@
 /*  cart */
-.cart-item {
+.cart-item__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,7 +7,7 @@
 }
 
 /* cart images */
-.cart-item img {
+.cart-item__container img {
   margin-right: auto;
   margin-left: 1em;
   width: 130px;
@@ -21,7 +21,7 @@
 }
 
 /* price */
-.item-price {
+.cart-item__item-price {
   margin-right: 1em;
   font-size: 1.1em;
   font-weight: bold;

@@ -31,20 +31,19 @@ const Cart = () => {
 
   return (
     <>
-      <h2 className="cart-title">Cart Checkout</h2>
+      <h2 className="cart__title">Cart Checkout</h2>
       {cartItem}
-      <p className="total-cost">Total: {totalCostDisplay}</p>
+      <p className="cart__total-cost">Total: {totalCostDisplay}</p>
 
-      {cartItems.length > 0 ? 
-        <div className="btn-wrapper">
-          <button onClick={PlaceOrder} className="order-btn">
+      {cartItems.length > 0 ? (
+        <div className="cart__btn-wrapper">
+          <button onClick={PlaceOrder} className="cart__order-btn">
             {placeOrder ? "Ordering..." : "place order"}
           </button>
         </div>
-      : 
-        <p className="no-items">You have no items in your cart.</p>
-      }
-      
+      ) : (
+        <p className="cart__no-items-text">You have no items in your cart.</p>
+      )}
     </>
   );
 };

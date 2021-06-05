@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: salmon;
+  background-color: rgb(114, 218, 250);
   color: white;
   padding: 0 10px;
   -webkit-box-shadow: 0px 2px 10px -5px rgba(21, 6, 5, 1);
@@ -11,17 +11,21 @@ header {
 }
 
 .cart-icon {
-  color: purple;
+  color: white;
+}
+
+.header__image-shop-text {
+  color: white;
+}
+
+.header__image-shop-text:hover {
+  color: red;
 }
 
 .cart-icon:hover {
-  color: white;
+  color: red;
 }
 
 a {
   text-decoration: none;
-}
-
-.pic-some-text:hover {
-  color: white;
 }
