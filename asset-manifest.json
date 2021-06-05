@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/imageShopApp/static/css/main.e2b0d4a0.chunk.css",
-    "main.js": "/imageShopApp/static/js/main.78052651.chunk.js",
-    "main.js.map": "/imageShopApp/static/js/main.78052651.chunk.js.map",
+    "main.css": "/imageShopApp/static/css/main.526f8fe4.chunk.css",
+    "main.js": "/imageShopApp/static/js/main.a7644548.chunk.js",
+    "main.js.map": "/imageShopApp/static/js/main.a7644548.chunk.js.map",
     "runtime-main.js": "/imageShopApp/static/js/runtime-main.ca4c8a22.js",
     "runtime-main.js.map": "/imageShopApp/static/js/runtime-main.ca4c8a22.js.map",
     "static/js/2.3bfd26d5.chunk.js": "/imageShopApp/static/js/2.3bfd26d5.chunk.js",
     "static/js/2.3bfd26d5.chunk.js.map": "/imageShopApp/static/js/2.3bfd26d5.chunk.js.map",
     "index.html": "/imageShopApp/index.html",
-    "static/css/main.e2b0d4a0.chunk.css.map": "/imageShopApp/static/css/main.e2b0d4a0.chunk.css.map",
+    "static/css/main.526f8fe4.chunk.css.map": "/imageShopApp/static/css/main.526f8fe4.chunk.css.map",
     "static/js/2.3bfd26d5.chunk.js.LICENSE.txt": "/imageShopApp/static/js/2.3bfd26d5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ca4c8a22.js",
     "static/js/2.3bfd26d5.chunk.js",
-    "static/css/main.e2b0d4a0.chunk.css",
-    "static/js/main.78052651.chunk.js"
+    "static/css/main.526f8fe4.chunk.css",
+    "static/js/main.a7644548.chunk.js"
   ]
 }
