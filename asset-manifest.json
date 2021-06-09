@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/imageShopApp/static/css/main.526f8fe4.chunk.css",
-    "main.js": "/imageShopApp/static/js/main.a7644548.chunk.js",
-    "main.js.map": "/imageShopApp/static/js/main.a7644548.chunk.js.map",
+    "main.js": "/imageShopApp/static/js/main.ae5f3c1c.chunk.js",
+    "main.js.map": "/imageShopApp/static/js/main.ae5f3c1c.chunk.js.map",
     "runtime-main.js": "/imageShopApp/static/js/runtime-main.ca4c8a22.js",
     "runtime-main.js.map": "/imageShopApp/static/js/runtime-main.ca4c8a22.js.map",
     "static/js/2.3bfd26d5.chunk.js": "/imageShopApp/static/js/2.3bfd26d5.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ca4c8a22.js",
     "static/js/2.3bfd26d5.chunk.js",
     "static/css/main.526f8fe4.chunk.css",
-    "static/js/main.a7644548.chunk.js"
+    "static/js/main.ae5f3c1c.chunk.js"
   ]
 }
