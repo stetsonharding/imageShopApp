@@ -18,7 +18,7 @@ const Image = ({ className, photo }) => {
           className="ri-heart-fill favorite"
         ></i>
       );
-    } else  {
+    } else if(hovered)  {
       return (
         <i
           onClick={() => toggleFavorite(photo.id)}
@@ -38,7 +38,7 @@ const Image = ({ className, photo }) => {
           className="ri-shopping-cart-fill cart shopping-cart-icon"
         ></i>
       );
-    } else  {
+    } else if(hovered)  {
       return (
         <i
           onClick={() => addToCart(photo)}
