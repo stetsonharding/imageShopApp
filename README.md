@@ -8,6 +8,8 @@ This project fetches the *UnSplash* API - getting and displaying all images to t
  2. React Router for site navigation.
 - ## CSS/Flexbox
  1. User friendly and fully responsive to any screen size.
+ - ## Unsplash API
+ 1. Fetch data as well as handle all edge cases and errors.
  ---
  ## Challanges
  
