@@ -1,7 +1,7 @@
 # Image Shop
 ---
 ## *Overview*
-This project fetches the *UnSplash* API - getting and displaying all images to the user. From here the user has the ability to browse, favorite, add/remove items from their cart, search for specific images based on search query, and get the correct grand total based on items in cart.
+This project retrieves all of the photos from the *UnSplash* API and displays them to the user. From this point, the user may explore, like, add to or delete from their basket, search for certain photographs based on search criteria, and get the accurate grand total based on the things in their cart.
 # *Technologies*
 - ## React.js
  1. Functional Components using Hooks (useState, useEffect, useRef, useContext, customized hook).
