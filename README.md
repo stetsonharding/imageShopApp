@@ -13,7 +13,7 @@ This project retrieves all of the photos from the *UnSplash* API and displays th
  ---
  ## Challanges
  
-I needed a way to change an image based on if the image was being hovered over. I created my own customized hook to do this. I keep track if a specific image is being hovered over and change the state as needed. True and False values render in different images. I have also tailored this hook to work for mobile. I import this hook into my images component and use when needed.
+I wanted a method to modify a picture according on whether it was being hovered over. For this, I made my own unique hook. I monitor if a certain image is being hovered over and adjust the state as necessary. Images that represent True and False values are distinct. This hook has also been modified to function on mobile. When necessary, I import this hook into my images component.
  
 ```JavaScript
 const useHover = () => {
